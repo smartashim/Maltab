@@ -1,0 +1,101 @@
+ codes of python 
+#python programming code 
+1.to find the number of digit present in the given number 
+num = int(input("Enter number:"))
+count=0
+while num!=0:
+    num = num//10
+    count=count+1
+    continue
+print(count," is total digit")
+
+
+
+2. atm machine project in python 
+ #ATM Machine project in python
+print("Welcome to global bank\n\n Please insert your care...")
+password=2324
+choice=0
+balance=120000
+pin=int(input("Enter your pin number:"))
+if(pin==password):
+   print("welcome to new transaction")
+   while(choice!=4):
+       print("\n\n__menu__")
+       print("1==balance")
+       print("2==deposite")
+       print("3==withdraw")
+       print("4==cancel")
+       choice=int(input("\n Enter your  choice:"))
+       if(choice==1):
+           print("Balance= Rs",balance)
+       elif(choice==2):
+           deposite=int(input("Enter your deposite amount:"))
+           balance+=deposite
+           print("\ndeposite amount=Rs",deposite,"sucessfully!!")
+           print("your balance is Rs",balance)
+       elif(choice==3):
+           withdrawal=int(input("Enter your withdrawal amount:"))
+           if(balance<withdrawal):
+               print("insufficient balance!! please check your balance once")
+           else:
+               balance-=withdrawal
+               print("\n withdraw amount=Rs",withdrawal,"sucessfully!!")
+               print("total balance:Rs",balance)
+       elif(choice==4):
+             print("\n/ session ended /thank you!!")
+       else:
+           print("Incorrect pin number!! please try  again...!")
+
+
+else:
+    print("Incorrect pin number!! please try again...!")
+
+3 project menu card in hotel (in python project)
+# hotel menu project in python
+print("Welcome in our hotel\n\nPlease inserted your card...!")
+password=1234
+balance=12000
+choice=0
+total=0
+pin=int(input("Enter your pin number:"))
+if(pin==password):
+     print("choose your meal sir/madam!!")
+     while(choice!=6):
+         print("\n__menu__")
+         print("1.==pizza/price=$5.00")
+         print("2.==burger/price=$12.00")
+         print("3.==coffee/price=$15.00")
+         print("4.==momo/price=$3.00")
+         print("5.==birany/price=$7.00")
+         print("6.==Exit\n")
+         choice=int(input("Enter your choice:"))
+         if(choice==1):
+            quantity=int(input("Enter your quantity:"))
+            total+=quantity*5
+         elif(choice==2):
+             quantity=int(input("Enter your quantity:"))
+             total+=quantity*12
+         elif(choice==3):
+             quantity=int(input("Enter your quantity:"))
+             total+=quantity*15
+         elif(choice==4):
+             quantity=int(input("Enter your quantity:"))
+             total+=quantity*3
+
+         elif(choice==5):
+             quantity=int(input("Enter your quantity:"))
+             total+=quantity*7
+         elif(choice==6):
+             print("thank you sir/madam")
+             print("total price is $",total)
+         else:
+             print("Incorrect pin  number!! please try again...!!")
+
+
+new="python programming"
+print(new.replace(' ','#').capitalize())
+new="python programming"
+new1=new.replace(' ','*')
+print(new1.capitalize())
+
