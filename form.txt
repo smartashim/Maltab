@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <style>
+         /* ------form css----*/
+            *{
+                padding:0;
+                margin:0;
+                box-sizing:border-box;
+            }
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                background: url('pexels-pixabay-33545.jpg');
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-position:center;
+                background-size:cover;
+            }
+            form{
+                border:1px solid lightgray;
+                border:none;
+                width:400px;
+                height:600px;
+                margin:auto;
+                padding:16px;
+                margin-top:50px;
+                background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6));
+            }
+            input[type=text],input[type=password]{
+                width:100%;
+                padding:12px 20px;
+                margin:8px 0;
+                display:inline-block;
+                border:none;
+                box-sizing:border-box;
+                border-bottom:1px solid black;
+                background-color:lightgray;
+                border-radius:16px;
+            }
+            button{
+                width:100%;
+                background-color:#04AA6D;
+                padding:12px 20px;
+                margin:8px 0;
+                border:none;
+                cursor:pointer;
+                color:white;
+                border-radius:23px;
+                font-weight:400;
+            }
+            button:hover{
+                background-color:#000;
+                opacity:0.8;
+            }
+            .cancelbtn{
+                width:auto;
+                padding:10px 18px;
+                background-color:#f44336;
+            }
+            span.psw{
+                float:right;
+                padding-top:16px;
+            }
+            .container{
+                padding:16px;
+                margin-bottom:-10px;
+            }
+            .imgcontainer{
+                text-align:center;
+                margin:24px 0 12px 0;
+                
+            }
+            .Avatar{
+                border-radius:70%;
+                width:40%;
+            }
+            @media screen and (max-width:500px){
+                span.psw{
+                    float:none;
+                    display:block;
+                }
+                
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="imgcontainer">
+                <img src=" avatarimge.jpg" alt="avatarig" class="Avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="uname" placeholder="Enter username" name="uname" required>
+                <label for="pwd"><b>Password</b></label>
+                <input type="password" id="pwd" placeholder="Enter password" name="pwd" required>
+                <button type="submit">login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remeber">Remeber me
+                </label>
+
+            </div>
+            <div class="container" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)); color:lightblue;">
+                <button type="button" class="cancelbtn">cancel</button>
+                <span class="psw">Forget<a href="hotel2.jpg"> password?</a>  </span>
+
+        </form>
+    </body>
+</html>
