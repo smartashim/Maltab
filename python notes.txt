@@ -1,0 +1,68 @@
+Creating a Set
+You can create a set using curly braces {} or the set() constructor.
+# Using curly braces
+my_set = {1, 2, 3, 4, 5}
+
+# Using the set() constructor
+another_set = set([1, 2, 3, 4, 5])
+
+Adding and Removing Elements
+Adding an element: Use the add() method.
+Removing an element: Use the remove() or discard() method. The remove() method raises a KeyError if the element is not found, while discard() does not.
+my_set = {1, 2, 3}
+
+# Adding an element
+my_set.add(4)
+print(my_set)  # Output: {1, 2, 3, 4}
+
+# Removing an element
+my_set.remove(2)
+print(my_set)  # Output: {1, 3, 4}
+
+# Discarding an element
+my_set.discard(5)  # No error, even though 5 is not in the set
+
+Set Operations
+Union: Combine elements from two sets.
+Intersection: Find common elements between two sets.
+Difference: Find elements in one set but not in the other.
+Symmetric Difference: Find elements that are in either of the sets, but not in both.
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+# Union
+union_set = set1.union(set2)
+print(union_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+# Intersection
+intersection_set = set1.intersection(set2)
+print(intersection_set)  # Output: {3, 4}
+
+# Difference
+difference_set = set1.difference(set2)
+print(difference_set)  # Output: {1, 2}
+
+# Symmetric Difference
+symmetric_difference_set = set1.symmetric_difference(set2)
+print(symmetric_difference_set)  # Output: {1, 2, 5, 6}
+Checking Membership
+You can check if an element is in a set using the in keyword.
+my_set = {1, 2, 3, 4, 5}
+
+print(3 in my_set)  # Output: True
+print(6 in my_set)  # Output: False
+
+Other Useful Methods
+clear(): Remove all elements from the set.
+copy(): Return a shallow copy of the set.
+pop(): Remove and return an arbitrary element from the set.
+my_set = {1, 2, 3, 4, 5}
+
+# Copying a set
+copied_set = my_set.copy()
+print(copied_set)  # Output: {1, 2, 3, 4, 5}
+
+# Clearing a set
+my_set.clear()
+print(my_set)  # Output: set()
+
